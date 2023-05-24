@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>        
+    <meta charset="UTF-8">
+    <title>Hacked</title>
+    <head>
+            <h1 class="glitch">My Autobiography</h1>
+            <style>
+                h1{
+                    margin: 10px;
+                    text-align: center;
+                }
+                .glitch {
+                    font-size: 100px;
+                    color: #000000;
+                    text-shadow: 
+                    -1px 0px rgba(255, 0, 0, 0.7),
+                    1px 0px rgba(0, 255, 0, 0.7),
+                    0px -1px rgba(0, 0, 255, 0.7),
+                    0px 1px rgba(255, 255, 0, 0.7);
+                    background: linear-gradient(90deg, #000, #fff, #000);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    animation: glitch 1s linear infinite;
+                }
+                @keyframes glitch {
+                    0% {
+                    text-shadow: 
+                        -1px 0px rgba(255, 0, 0, 0.7),
+                        1px 0px rgba(0, 255, 0, 0.7),
+                        0px -1px rgba(0, 0, 255, 0.7),
+                        0px 1px rgba(255, 255, 0, 0.7);
+                    }
+                    25% {
+                    text-shadow: 
+                        -1px 0px rgba(0, 255, 0, 0.7),
+                        1px 0px rgba(0, 0, 255, 0.7),
+                        0px -1px rgba(255, 255, 0, 0.7),
+                        0px 1px rgba(255, 0, 0, 0.7);
+                    }
+                    50% {
+                    text-shadow: 
+                        -1px 0px rgba(0, 0, 255, 0.7),
+                        1px 0px rgba(255, 255, 0, 0.7),
+                        0px -1px rgba(255, 0, 0, 0.7),
+                        0px 1px rgba(0, 255, 0, 0.7);
+                    }
+                    75% {
+                    text-shadow: 
+                        -1px 0px rgba(255, 255, 0, 0.7),
+                        1px 0px rgba(255, 0, 0, 0.7),
+                        0px -1px rgba(0, 255, 0, 0.7),
+                        0px 1px rgba(0, 0, 255, 0.7);
+                    }
+                    100% {
+                    text-shadow: 
+                        -1px 0px rgba(0, 0, 255, 0.7),
+                        1px 0px rgba(255, 255, 0, 0.7),
+                        0px -1px rgba(255, 0, 0, 0.7),
+                        0px 1px rgba(0, 255, 0, 0.7);
+                    }
+                }
+                body{
+                    background-image: url(HomeImage.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .btn0, .btn1{
+                    margin: 20px;
+                }
+                .btn2{
+                    display: flex;
+                    margin-left: 50px;
+                }
+                button:hover{
+                    color: #ff0000;
+                    transform: scale(2);
+                    cursor: pointer;
+                    transition: 1s;
+                }
+                button, li{
+                    text-align: center;
+                    display: inline-block;
+                    background-color: inherit;
+                    padding: 14px 28px;
+                    border: none;
+                    border-radius: 50%;
+                    font-size: 45px;
+                    animation: colorChange 7s ease-in-out infinite alternate;
+                }
+                @keyframes colorChange {
+                    50% { color: rgb(3, 3, 3); } 
+                    50% { color: rgb(255, 0, 0); } 
+                }
+                .foot{
+                    margin: 20px;
+                }
+                footer{
+                    margin: 20px;
+                    text-align: center;
+                    color: #fff;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="btn0">
+            <nav class="btn1">
+                <li class="btn2"><a href="Home.html"><button>Home</button></a></li>
+                <li class="btn2"><a href="AboutMe.html"><button>About Me</button></a></li>
+                <li class="btn2"><a href="Hobbies.html"><button>Hobbies</button></a></li>
+                <li class="btn2"><a href="Skills.html"><button>Skills</button></a></li>
+            </nav>
+        </div>
+        <div class="foot">
+            <footer>
+                <p>&copy;Created by Febdanriel S. Yunsal - BSIT-1B CompTech</p>
+            </footer>
+        </div>
+    </body>
+</html>

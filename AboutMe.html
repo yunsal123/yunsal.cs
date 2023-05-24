@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <head>
+        <div class="margin">
+            <h1>Personal Info</h1>
+        </div>
+        <style>
+            .margin{
+              margin: 5px;
+            }
+            h1{
+                margin: 20px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-size: 72px;
+                background: linear-gradient(90deg, rgb(0, 253, 253),rgb(248, 7, 248));
+                animation: slideIn 2s ease-in-out;
+            }
+            @keyframes slideIn {
+              from { opacity: 0; transform: translatey(-50px); }
+              to { opacity: 1; transform: translatey(0); }
+            }
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 33%;
+            }
+            .name{
+                text-align: center;
+                font-size: 30px;
+                animation: colorChange 3s ease-in-out infinite alternate;
+            }
+            @keyframes colorChange {
+                10% { color: rgb(119, 0, 255); } 
+                20% { color: rgb(174, 0, 255); } 
+                30% { color: rgb(183, 0, 255); } 
+                40% { color: rgb(212, 0, 255); } 
+                50% { color: rgb(255, 0, 242); } 
+            }
+            tr, td {
+              border: none;
+              padding: 10px;
+              text-align: left;
+            }
+            .table1 {
+              border-collapse: collapse;
+              width: 50%;
+              margin: 0 auto;
+            }
+            .school{
+              text-align: center;
+              font-size: 20px
+            }
+            .table2{
+              border-collapse: collapse;
+              width: 50%;
+              margin: 0 auto;
+            }
+            .fam{
+              text-align: center;
+              font-size: 20px
+            }
+            .table3{
+              border-collapse: collapse;
+              width: 50%;
+              margin: 0 auto;
+            }
+            .foot{
+              margin: 20px;
+            }
+            footer{
+              font-size: small;
+              margin: 20px;
+              text-align: center;
+              color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+          <div class="image-container">
+      </div>
+          <div>
+            <p class="name">Febdanriel S. Yunsal</p>
+          </div>
+      <div class="table1">
+            <table>
+                  <tr>
+                    <td>Age:</td>
+                    <td>21</td>
+                  </tr>
+                  <tr>
+                    <td>Address:</td>
+                    <td>Kagudoy Basak Lapu-Lapu City</td>
+                  </tr>
+                  <tr>
+                    <td>Birthdate:</td>
+                    <td>Febuary 27, 2002</td>
+                  </tr>
+                  <tr>
+                    <td>Birthplace:</td>
+                    <td>Lapu-Lapu City</td>
+                  </tr>
+                  <tr>
+                    <td>Religion:</td>
+                    <td>Roman Catholic</td>
+                  </tr>
+                  <tr>
+                    <td>Nationality:</td>
+                    <td>Filipino</td>
+                  </tr>
+            </table>
+      </div>
+          <div>
+            <h3 class="school">School Background</h3>
+          </div>
+      <div class="table2">
+            <table>
+              <tr>
+                <td>Elementary:</td>
+                <td>Bagong Silang Elementary School</td>
+              </tr>
+              <tr>
+                <td>Graduated:</td>
+                <td>2013-2014</td>
+              </tr>
+              <tr>
+                <td>Senior/High School:</td>
+                <td>Bankal National High School</td>
+              </tr>
+              <tr>
+                <td>Graduated:</td>
+                <td>2020-2021</td>
+            </table>
+      </div>
+        <div>
+          <h3 class="fam">Family Background</h3>
+        </div>
+      <div class="table3">
+        <table>
+          <tr>
+            <td>Mother's Name:</td>
+            <td>Rowena S. Yunsal</td>
+          </tr>
+          <tr>
+            <td>Father's Name</td>
+            <td>Dante A. Yunsal</td>
+          </tr>
+          <tr>
+            <td>Sister's Name</td>
+            <td>Faith Danna S. Yunsal</td>
+          </tr>
+        </table>
+  </div>
+      <footer>
+        <p>&copy;Created by Febdanriel S. Yunsal - BSIT-1B CompTech</p>
+      </footer>
+    </body>
+</html>

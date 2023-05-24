@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <head>
+        <div class="margin">
+            <h1>Skills</h1>
+        </div>
+            <style>
+                .margin{
+                    margin: 5px;
+                }
+                h1{
+                    margin: 10px;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 72px;
+                    background: linear-gradient(90deg, rgb(89, 128, 236),rgb(245, 100, 100));
+                    animation: slideIn 2s ease-in-out;
+                }
+                @keyframes slideIn {
+                    from { opacity: 0; transform: translatey(-50px); }
+                    to { opacity: 1; transform: translatey(0); }
+                }
+                body{
+                    background-color: #000000;
+                }
+                .all{
+                    margin: 10px 0px 40px 0px;
+                }
+                .dashboard0, .dashboard1{
+                    display: flex;
+                    justify-content: center;
+                }
+                .text{
+                    color: #ffffff;
+                    text-align: center;
+                    animation: colorChange 5s ease-in-out infinite alternate;
+                }
+                @keyframes colorChange {
+                    50% { color: rgb(255, 255, 255); } 
+                    50% { color: rgb(255, 0, 0); } 
+                }
+                svg {
+                    width: 114px;
+                    height: 114px;
+                    margin: 1em;
+                }
+                .bg {
+                    fill: none;
+                    stroke-width: 10px;
+                    stroke: #1A2C34;
+                }
+                [class^="meter-"] {
+                    fill: none;
+                    stroke-width: 10px;
+                    stroke-linecap: round;
+                    transform: rotate(90deg);
+                    transform-origin: 50% 50%;
+                }
+                .meter-1 {
+                    stroke-dasharray: 360;
+                    stroke-dashoffset: 555;
+                    stroke: aqua;
+                    animation: progress-1 5s ease-out;
+                }
+                @keyframes progress-1 {
+                    from {
+                        stroke-dashoffset: 360;
+                    }
+                    to {
+                        stroke-dashoffset: 555;
+                    }
+                }
+                .meter-2 {
+                    stroke: lime;
+                    stroke-dasharray: 360;
+                    stroke-dashoffset: 470;
+                    animation: progress-2 5s ease-out;
+                }
+                @keyframes progress-2 {
+                    from {
+                        stroke-dashoffset: 360;
+                    }
+                    to {
+                        stroke-dashoffset: 470;
+                    }
+                }
+                .meter-3 {
+                    stroke: magenta;
+                    stroke-dasharray: 360;
+                    stroke-dashoffset: 635;
+                    animation: progress-3 5s ease-out;
+                }
+                @keyframes progress-3 {
+                    from {
+                        stroke-dashoffset: 360;
+                    }
+                    to {
+                        stroke-dashoffset: 635;
+                    }
+                }
+                .meter-4 {
+                    stroke: rgb(0, 17, 255);
+                    stroke-dasharray: 360;
+                    stroke-dashoffset: 635;
+                    animation: progress-4 5s ease-out;
+                }
+                @keyframes progress-4 {
+                    from {
+                        stroke-dashoffset: 360;
+                    }
+                    to {
+                        stroke-dashoffset: 635;
+                    }
+                }
+                .meter-5 {
+                    stroke: rgb(255, 123, 0);
+                    stroke-dasharray: 360;
+                    stroke-dashoffset: 670;
+                    animation: progress-5 5s ease-out;
+                }
+                @keyframes progress-5 {
+                    from {
+                        stroke-dashoffset: 360;
+                    }
+                    to {
+                        stroke-dashoffset: 670;
+                    }
+                }
+                .meter-6 {
+                    stroke: rgb(229, 255, 0);
+                    stroke-dasharray: 360;
+                    stroke-dashoffset: 430;
+                    animation: progress-6 5s ease-out;
+                }
+                @keyframes progress-6 {
+                    from {
+                        stroke-dashoffset: 360;
+                    }
+                    to {
+                        stroke-dashoffset: 430;
+                    }
+                }
+                .foot, h3{
+                    margin: 10px;
+                    font-size: 15px;
+                    text-align: center;
+                    color: #ffffff;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="all">
+            <div class="dashboard0">
+                <div class="text">    
+                    <svg>
+                    <circle class="bg" cx="57" cy="57" r="52" />
+                    <circle class="meter-1" cx="57" cy="57" r="52" />
+                    </svg>
+                    <p>50%</p>
+                    <h3>C++</h3>
+                </div>
+                <div class="text">    
+                    <svg>
+                    <circle class="bg" cx="57" cy="57" r="52" />
+                    <circle class="meter-2" cx="57" cy="57" r="52" />
+                    </svg>
+                    <p>25%</p>
+                    <h3>CSS</h3>
+                </div>
+                <div class="text">    
+                    <svg>
+                    <circle class="bg" cx="57" cy="57" r="52" />
+                    <circle class="meter-3" cx="57" cy="57" r="52" />
+                    </svg>
+                    <p>75%</p>
+                    <h3>HTML</h3>
+                </div>  
+            </div>
+            <div class="dashboard1">
+                <div class="text">    
+                    <svg>
+                      <circle class="bg" cx="57" cy="57" r="52" />
+                      <circle class="meter-4" cx="57" cy="57" r="52" />
+                    </svg>
+                    <p>75%</p>
+                    <h3>Drawing</h3>
+                </div>  
+                <div class="text">    
+                    <svg>
+                      <circle class="bg" cx="57" cy="57" r="52" />
+                      <circle class="meter-5" cx="57" cy="57" r="52" />
+                    </svg>
+                    <p>90%</p>
+                    <h3>Gaming</h3>
+                </div>  
+                <div class="text">    
+                    <svg>
+                      <circle class="bg" cx="57" cy="57" r="52" />
+                      <circle class="meter-6" cx="57" cy="57" r="52" />
+                    </svg>
+                    <p>10%</p>
+                    <h3>Communication</h3>
+                </div>  
+            </div>
+        </div>
+        <div class="foot">
+            <footer>
+                <h3>&copy;Created by Febdanriel S. Yunsal - BSIT-1B CompTech</h3>
+            </footer>
+        </div>
+    </body>
+</html>
